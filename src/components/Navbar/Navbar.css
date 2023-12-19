@@ -1,0 +1,60 @@
+.nav-bar {
+    background-color: #000000; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px; 
+    font-weight: bold;
+    height: 30px; 
+  }
+  
+  .logo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+  }
+  
+  .nav-bar:hover {
+    background-color: #ffffff; 
+    color: black;
+  }
+  
+  .list {
+    margin-top: 5px;
+  }
+
+  .list ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .list li {
+    margin: 0 15px; /* Adjust margin for spacing between list items */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Add smooth color transition */
+  }
+  
+  .list li:hover {
+    color: #2243d6; /* Change text color on hover */
+  }
+
+  @media (max-width: 508px) {
+    .nav-bar {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  
+    .list {
+      margin-top: 10px;
+    }
+  
+    .list li {
+      margin: 5px 0;
+      padding-left: 15px;
+    }
+  }
